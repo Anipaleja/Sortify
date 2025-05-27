@@ -1,6 +1,6 @@
 # Sortify
 
-**Sortify** — A lightweight, intelligent folder organizer to clean up your files effortlessly.
+**Sortify** — A lightweight, intelligent folder organizer to clean up your files effortlessly and efficiently.
 
 ## Overview
 
