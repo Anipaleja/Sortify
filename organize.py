@@ -6,7 +6,7 @@ import shutil
 from pathlib import Path
 from collections import defaultdict
 
-# 📦 File categories and their corresponding extensions
+# File categories and their corresponding extensions
 FILE_TYPES = {
     "Images": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".webp"],
     "Documents": [".pdf", ".docx", ".doc", ".txt", ".pptx", ".xlsx", ".csv", ".md"],
@@ -28,7 +28,7 @@ def organize_folder(folder_path):
     folder = Path(folder_path).resolve()
     
     if not folder.exists() or not folder.is_dir():
-        print(f"❌ Error: '{folder}' is not a valid folder.")
+        print(f"Error: '{folder}' is not a valid folder.")
         return
 
     print(f"📁 Organizing files in: {folder}\n")
