@@ -31,7 +31,7 @@ def organize_folder(folder_path):
         print(f"Error: '{folder}' is not a valid folder.")
         return
 
-    print(f"📁 Organizing files in: {folder}\n")
+    print(f"Organizing files in: {folder}\n")
 
     moved_files = defaultdict(list)
 
@@ -45,13 +45,13 @@ def organize_folder(folder_path):
             try:
                 shutil.move(str(file), destination / file.name)
                 moved_files[category].append(file.name)
-                print(f"✅ Moved: {file.name} ➜ {category}/")
+                print(f"Moved: {file.name} ➜ {category}/")
             except Exception as e:
-                print(f"⚠️ Failed to move {file.name}: {e}")
+                print(f"Failed to move {file.name}: {e}")
 
-    print("\n🎉 Organizing complete!")
+    print("\nOrganizing complete!")
     for category, files in moved_files.items():
-        print(f"📂 {category}: {len(files)} file(s)")
+        print(f"{category}: {len(files)} file(s)")
 
 def main():
     parser = argparse.ArgumentParser(description="Smart Folder Organizer")
